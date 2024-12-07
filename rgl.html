@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DownCity RP - Informations</title>
+    <style>
+        /* Base styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            background: #ecf0f1;
+            color: #2c3e50;
+        }
+        header {
+            background: linear-gradient(90deg, #3498db, #8d2ecc);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header p {
+            margin: 5px 0 0;
+            font-size: 1.2em;
+        }
+
+        /* Navigation bar */
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #2c3e50;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 1.1em;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background: #3498db;
+            border-radius: 5px;
+        }
+
+        /* Main content */
+        main {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        section {
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+
+        /* Sections */
+        h2 {
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        p, ul {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        ul li {
+            margin-bottom: 5px;
+        }
+        .highlight {
+            background: #e74c3c;
+            color: white;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => section.classList.remove('active'));
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>DownCity RP</h1>
+        <p>Règlement et informations essentielles pour tous les joueurs & staffs.</p>
+    </header>
+    <nav>
+        <a href="#" onclick="showSection('regles-general')">Règlement Général</a>
+        <a href="#" onclick="showSection('regles-illegal')">Règlement Illégal</a>
+        <a href="#" onclick="showSection('safezones')">Les Safezones</a>
+        <a href="#" onclick="showSection('definitions')">Définitions</a>
+        <a href="#" onclick="showSection('staff')">Staff</a>
+    </nav>
+    <main>
+        <section id="regles-general" class="section active">
+            <h2>Règlement Général</h2>
+            <p>
+                Le respect des règles est essentiel pour garantir une expérience de jeu immersive et équitable pour tous les participants. 
+                Chaque joueur est tenu de suivre un comportement cohérent et réaliste dans toutes les situations, en restant fidèle à l'esprit du rôle-play. 
+                Les actions doivent être pensées et réalisées dans le cadre du RP, et toute forme de comportement contraire à l’immersion est à proscrire.
+            </p>
+            <p>
+                La coopération entre les joueurs, le respect mutuel et une communication claire sont des éléments fondamentaux. 
+                Toute attitude perturbatrice, les abus ou infractions aux règles seront sanctionnés afin de maintenir une ambiance saine. 
+                Les interactions doivent toujours refléter une approche mature et respectueuse, en gardant à l'esprit que le plaisir de jeu est partagé.
+            </p>
+            <p>
+                Les zones spécifiques et les règles associées doivent être scrupuleusement respectées. 
+                Les décisions prises dans une scène RP doivent être cohérentes et suivies jusqu'à leur résolution. 
+                Le non-respect des délais ou des règles établies peut nuire à l’expérience de jeu et entraîner des conséquences. 
+            </p>
+            <p>
+                Enfin, tous les joueurs sont invités à faire preuve de responsabilité dans leur manière de jouer et d’interagir avec les autres. 
+                Le règlement est en place pour garantir une expérience de jeu enrichissante, immersive et juste pour tous les membres de la communauté.
+            </p>
+        </section>
+        
+
+        <!-- Règlement Illégal -->
+        <section id="regles-illegal" class="section active">
+            <h2>Règlement Illégal</h2>
+            <p>Voici le règlement officiel concernant la partie illégale du serveur DownCity RP.</p>
+        
+            <h3>1. Loot</h3>
+            <p>Il est interdit de voler si la cible ne vous a rien fait de spécial qui justifierait cet acte, si vous faites partie d’une organisation illégale cette règle ne s’applique pas.</p>
+            <p>Il est interdit de prendre plus de 50% de l’argent sale et propre.</p>
+            <p>Il est interdit d’avoir une arme d'un membre des services publics (taser, matraque, pistolet de combat, m4, etc...) sans en faire partie.</p>
+            <p>Il est interdit de faire sortir son véhicule à quelqu’un dans le but de piller son coffre et de forcer une maison (à moins d’en parler au Staff et d’avoir l’accord).</p>
+            <p>Il n’est pas autorisé de forcer un joueur à aller retirer.</p>
+            <p>Il est interdit de voler une arme / un gilet pare-balle d’une personne si vous n’êtes pas un policier en service ou que vous n’êtes pas en guerre officielle contre l’organisation illégale de la personne.</p>
+            <p>Il est interdit de prendre le sac d’une personne ou de forcer une personne à vous donner ceci.</p>
+        
+            <h3>2. Gunfights</h3>
+            <p>Il est interdit de faire un ticket pouvant annuler la scène pendant un gunfight.</p>
+            <p>Il est interdit de posséder un gilet pare-balle invisible sous risque d’un ban permanent.</p>
+        
+            <h3>3. Descentes</h3>
+            <p>Vous devez respecter le mass rp peu importe votre supériorité numérique si vous rentrez dans une zone avec énormément d’habitations et de civils exemple: quartier families alors le mass rp est appliqué, quand le mass rp est appliqué vous ne pouvez rester qu’un maximum de 30 secondes approximativement dans la zone (votre personnage est censé avoir peur que l'attention soit attirée sur lui et que la situation dégénère).</p>
+        
+            <h3>4. Points chauds</h3>
+            <p>Il est interdit de faire travailler une personne sauf si la personne est un indépendant souhaitant travailler, vous devez le taxer 30% minimum, vous êtes responsable de la cohérence rp du point de drogue, exemple : si un indépendant travaille tout en n’appliquant pas le fear police vous devez leur faire comprendre de manière rp que soit ils sont sérieux soit ils partent sinon vous serez tout aussi sanctionner.</p>
+            <p>Il est interdit de faire travailler plus de 10 indépendants par circuit de point chaud en même temps.</p>
+            <p>Il est interdit pour un indépendant de travailler sur un point chaud sans être sous la tutelle d’une organisation et sa présence physique sur le point chaud concerné.</p>
+            <p>Il est interdit de vendre ou donner l’emplacement d’un point chaud si vous n’êtes pas de la même organisation.</p>
+            <p>Il est interdit pour une organisation illégale de se mêler de plus d'un circuit de drogue par jour.</p>
+            <p>Il est interdit pour une organisation illégale de démarrer une fusillade sur un point chaud si ce n'est pas pour l’utiliser (si point de récolte vous devez y travailler au minimum 30 minutes).</p>
+            <p>Il est interdit pour une organisation illégale d’éliminer une personne qui n'a pas été averti au moins une fois que le point sur lequel il se trouve à proximité est un point chaud et qu’il y risque sa vie.</p>
+            <p>Le blanchiment est un point chaud, les règles ci-dessus s’appliquent.</p>
+        
+            <h3>5. Organisations Illégales</h3>
+            <p>Il est interdit de faire une alliance entre groupes illégaux.</p>
+            <p>Il est interdit de rejoindre une organisation illégale sans avoir attendu 1 semaine après en avoir quitté une autre.</p>
+            <p>Il est interdit de faire une alliance de type indépendants et groupes illégaux.</p>
+            <p>Lorsqu'un personnage/joueur porte un casque ou un masque (même si des cheveux dépassent), il est IMPOSSIBLE de le reconnaître physiquement ou par sa voix (y compris son sexe), on peut éventuellement reconnaître son ethnie par son accent, mais pas son identité.</p>
+            <p>Une organisation illégale ne peut être composée que de maximum 30 personnes.</p>
+            <p>Il est interdit de dire que vous êtes indépendant si vous faites partie de n’importe quel type d’organisation illégale.</p>
+            <p>Il est interdit pour les organisations illégales de faire n’importe quelle opération sans sa tenue d’opération dont les membres doivent avoir tous le même code couleur.</p>
+            <p>Tout groupe d’indépendants de plus de 4 personnes est considéré comme organisation illégale non-officielle, vous devrez donc aussi respecter le règlement concernant les organisations illégales.</p>
+        
+            <h3>6. Braquages</h3>
+            <p>Attendre au moins 30 minutes après le reboot avant de lancer un braquage.</p>
+            <p>Maximum 5 pour un braquage de Supérette.</p>
+            <p>Un seul braquage de supérette est possible pour le groupe par heure.</p>
+            <p>Être au minimum un groupe de 5 (max 10) pour un braquage de Banque.</p>
+            <p>Un seul braquage de banque est possible pour le groupe en 24h.</p>
+            <p>Il est interdit de se rendre dans une banque ou une supérette dans le but de déposer/retirer de l’argent ou d’acheter des provisions lorsque celle-ci est déjà attaquée, il est également interdit de se joindre aux assaillants si vous ne faites pas partie du groupe rebelle qui attaque la banque ou la supérette.</p>
+        </section>
+        
+
+        <!-- Safezones -->
+        <section id="safezones" class="section">
+            <h2>Les SafeZones</h2>
+            <p>Les Safezones sont des lieux où toute activité illégale est interdite et ou vous serez en sécurité (sans armes , sans possibilité de taper / frapper) :</p>
+            <ul>
+                <li>Tous les postes (LSPD , DOA , FBI , NOOSE , LSSD)</li>
+                <li>Les Hôpitaux</li>
+                <li>Les Entreprises Publiques (Brinks , Avocats , Gouvernement , Benny's , Autocar etc...)</li>
+                <li>Le Concessionnaire</li>
+                <li>Les Gros Parkings Publics (PC)</li>
+                <li>L'Aéroport (Zones de spawn)</li>
+            </ul>
+            <p><strong>Rappel :</strong> Il est interdit de se rendre dans une Safezone en plein milieu d'une scène RP.</p>
+        </section>
+
+        <!-- Définitions -->
+        <section id="definitions" class="section">
+            <h2>Les Définitions</h2>
+            <ul>
+                <li><strong>No Fear RP :</strong> Ne pas jouer la peur face à une menace.</li>
+                <li><strong>No Pain RP :</strong> Ne pas jouer la douleur face à un accident.</li>
+                <li><strong>Chicken-Run :</strong> Courir en zigzag pour éviter des tirs, interdit.</li>
+                <li><strong>Powergaming :</strong> Jouer de manière irréelle , faire des actions irréalisables IRL.</li>
+                <li><strong>Metagaming :</strong> Utiliser des informations HRP en jeu.</li>
+                <li><strong>Carkill :</strong> Ecraser volontairement un joueur sans raison valable.</li>
+                <li><strong>Coma :</strong> Respectez les règles sur la perte de mémoire et l’incapacité de parler après un coma.</li>
+                <li><strong>Freekill :</strong> Tuer un joueur sans raison RP.</li>
+                <li><strong>Courtoisie :</strong> Etre respectueux envers tous, même en dehors du RP.</li>
+            </ul>
+        </section>
+
+        <!-- Staff -->
+        <section id="staff" class="section">
+            <h2>Informations et Règlement pour le Staff</h2>
+            <h3>Rôle et Responsabilités</h3>
+            <ul>
+                <li>Assurez-vous de résoudre les conflits de manière impartiale.</li>
+                <li>Répondez rapidement aux tickets des joueurs.</li>
+                <li>Appliquez les sanctions conformément aux règles établies.</li>
+            </ul>
+            <h3>Mini-Règlement du Staff</h3>
+            <ul>
+                <li>Ne jamais abuser des permissions administratives à des fins personnelles.</li>
+                <li>Être courtois et professionnel en toute circonstance.</li>
+                <li>Documenter chaque sanction avec preuves.</li>
+                <li>Informer l'équipe en cas de problème majeur ou de décision importante.</li>
+            </ul>
+        </section>
+    </main>
+
+</body>
+</html>
